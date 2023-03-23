@@ -17,7 +17,7 @@
     </properties>
     <dependencyManagement>
         <dependencies>
-            <!--导入spring cloud组件 -->
+            <!--导入spring cloud版本管理组件 -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -25,18 +25,19 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- 导入springboot 增强组件 这个组件包含了springboot的依赖 -->
-            <dependency>
-                <groupId>cn.onetozero</groupId>
-                <artifactId>spring-boot-support</artifactId>
-                <version>${spring-boot-support.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+            <!-- 导入spring cloud alibaba 版本管理组件 -->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>2021.0.4.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- 导入springboot 增强版本管理组件  这个组件包含了springboot的依赖 -->
+            <dependency>
+                <groupId>cn.onetozero</groupId>
+                <artifactId>spring-boot-support</artifactId>
+                <version>${spring-boot-support.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
