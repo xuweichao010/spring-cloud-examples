@@ -1,0 +1,21 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: base-gateway-service
+  cloud:
+    nacos:
+      # 服务发现配置
+      discovery:
+        namespace: SpringCloudExamplesDev
+      # 使用远程配置
+      config:
+        name: ${spring.application.name} #服务定制化配置 一般都是空的 里面存放的都是临时配置
+        group: SERVICE
+        file-extension: yaml
+        extension-configs:
+          - data-id: middleware-env.yaml  #第三方中间件配置
+            group: ENV
+          - data-id: service-common-env.yaml # 服务通用配置
+            group: ${spring.cloud.nacos.config.group}
+      server-addr: 127.0.0.1:8848
