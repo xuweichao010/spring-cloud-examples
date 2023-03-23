@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.onetozero</groupId>
-    <version>2021.0.5.M1-SNAPSHOT</version>
+    <version>0.1-SNAPSHOT</version>
     <artifactId>base-user-service</artifactId>
 
 
